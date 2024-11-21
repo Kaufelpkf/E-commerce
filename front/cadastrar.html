@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCadastro.css">
+    <script src="paginaInicial.js" defer></script>
+    <script src="carrinho.js" defer></script>
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo">
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+        </nav>
+        <div class="user-cart">
+            <a href="carrinho.html">
+                <img src="./assets/carrinho.png" alt="Carrinho">
+            </a>
+            <button class="menu-btn" id="menu-btn">Menu</button>
+        </div>
+    </header>
+
+    <div class="side-nav" id="side-nav">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <a href="login.html">Logar</a>
+        <a href="cadastrar.html">Cadastrar</a>
+    </div>
+    <main>
+        <h1>Cadastrar Cliente</h1>
+
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" placeholder="Insira um nome">
+
+        <label for="sobrenome">sobrenome: </label>
+        <input type="text" id="sobrenome" placeholder="Insira um sobrenome"><br><br>
+
+        <label for="cpf">CPF: </label>
+        <input type="text" id="cpf" placeholder="Insira o CPF"> 
+
+        <label for="telefone">Telefone: </label>
+        <input type="text" id="telefone" placeholder="Insira o telefone"><br><br>
+
+        <label for="email">Email: </label>
+        <input type="text" id="email" placeholder="Insira o Email:">
+
+        <label for="senha">Senha: </label>
+        <input type="text" id="senha" placeholder="Insira sua senha"><br><br>
+
+        <h2>Dados do Endereço:</h2><br>
+
+        <label for="logradouro">logradouro: </label>
+        <input type="text" id="logradouro" placeholder="Insira um logradouro">
+
+        <label for="numero">Número: </label>
+        <input type="text" id="numero" placeholder="Insira um Nº">
+        <br><br>
+
+        <label for="complemento">Complemento: </label>
+        <input type="text" id="complemento" placeholder="Insira o Complemento">
+
+        <label for="bairro">Bairro: </label>
+        <input type="text" id="bairro" placeholder="Insira um Bairro"><br><br>
+
+        <label for="localidade">Localidade: </label>
+        <input type="text" id="localidade" placeholder="Insira uma localidade">
+
+        <label for="uf">UF: </label>
+        <input type="text" id="uf" placeholder="insira uma UF"><br><br>
+
+        <label for="cep">CEP: </label>
+        <input type="text" id="cep" placeholder="Insira um CEP">
+
+        <label for="statusCliente">Status do Cliente: </label>
+        <input type="text" id="statusCliente" placeholder="Insira o status do cliente">
+        <br><br><br>    
+
+        <button id="cad_cli">Cadastrar</button><br><br>
+
+        <div id="res"></div>
+    </main>
+    <div class="whats">
+        <a href="https://wa.me/5547992270442">
+            <img src="./assets/icon_whats.png" alt="whatsapp">
+        </a>
+    </div>
+    
+</body>
+</html>

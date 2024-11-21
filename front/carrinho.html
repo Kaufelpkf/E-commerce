@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="resumoCompras.js" defer></script>
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo">
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+        </nav>
+        <div class="user-cart">
+            <a href="carrinho.html">
+                <img src="./assets/carrinho.png" alt="Carrinho">
+            </a>
+            <button class="menu-btn" id="menu-btn">Menu</button>
+        </div>
+    </header>
+    <div class="side-nav" id="side-nav">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <a href="login.html">Logar</a>
+        <a href="cadastrar.html">Cadastrar</a>
+    </div>
+
+    <main class="carrinho-container">
+        <h1>Seu Carrinho</h1>
+        <div id="carrinho-itens" class="carrinho-itens">
+            <!-- Os itens do carrinho aparecerão aqui -->
+        </div>
+        <div class="carrinho-total-container">
+            <h2>Total: <span id="carrinho-total"></span></h2>
+        </div>
+
+        <button id="comprar">Comprar</button>
+    </main>
+
+    <div class="side-nav" id="side-nav">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <a href="login.html">Logar</a>
+        <a href="cadastrar.html">Cadastrar</a>
+    </div>
+</body>
+</html>

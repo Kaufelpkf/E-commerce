@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+    <script src="paginaInicial.js" defer></script>
+    <script src="carrinho.js" defer></script>
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo">
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+        </nav>
+        <div class="user-cart">
+            <a href="carrinho.html">
+                <img src="./assets/carrinho.png" alt="Carrinho">
+            </a>
+            <button class="menu-btn" id="menu-btn">Menu</button>
+        </div>
+    </header>
+
+    <div class="side-nav" id="side-nav">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <a href="login.html">Logar</a>
+        <a href="cadastrar.html">Cadastrar</a>
+    </div>
+
+    <div class="carousel">
+        <button class="carousel-btn left">&#10094;</button>
+        <div class="carousel-wrapper">
+            <img src="./assets/imagem1.jpg" alt="Imagem1">
+            <img src="./assets/imagem2.png" alt="Imagem2">
+            <img src="./assets/imagem3.png" alt="Imagem3">
+            <img src="./assets/imagem4.png" alt="Imagem4">
+            <img src="./assets/imagem5.png" alt="Imagem5">
+        </div>
+        <button class="carousel-btn right">&#10095;</button>
+    </div>
+
+    <main>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="./assets/dunkBlue.png" alt="Dunk Blue">
+                <div class="product-details">
+                    <div class="product-price">R$ 150,00</div>
+                    <div class="product-title">Dunk Blue</div>
+                    <button class="buy-button" onclick="addToCart('Dunk Blue', 150.00, './assets/dunkBlue.png')">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./assets/red.png" alt="Curry Red">
+                <div class="product-details">
+                    <div class="product-price">R$ 250,00</div>
+                    <div class="product-title">Curry Red</div>
+                    <button class="buy-button" onclick="addToCart('Curry Red', 250.00, './assets/red.png')">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./assets/dunkWhite.png" alt="Dunk White">
+                <div class="product-details">
+                    <div class="product-price">R$ 190,00</div>
+                    <div class="product-title">Dunk White</div>
+                    <button class="buy-button" onclick="addToCart('Dunk White', 190.00, './assets/dunkWhite.png')">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./assets/yellow.png" alt="Jike Yellow">
+                <div class="product-details">
+                    <div class="product-price">R$ 250,00</div>
+                    <div class="product-title">Jike Yellow</div>
+                    <button class="buy-button" onclick="addToCart('Jike Yellow', 250.00, './assets/yellow.png')">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="whats">
+        <a href="https://wa.me/5547992270442">
+            <img src="./assets/icon_whats.png" alt="whatsapp">
+        </a>
+    </div>
+    
+</body>
+</html>
